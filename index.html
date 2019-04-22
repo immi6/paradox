@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="Description" content="Muhaiminul Islam Resume" />
+	<meta name="theme-color" content="#3aafa9"/>
+	<title>Paradox</title>
+	<link rel="icon" type="image/png" href="img/mylogo.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Iceberg|Teko" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css" />
+	
+</head>
+<body>
+
+	<div id="particles-js2"></div>
+	<div id="particles-js3"></div>
+	<div id="particles-js4"></div>
+	<div id="particles-js5"></div>
+	<div id="particles-js"></div>
+	
+
+	<div class="title">
+		<h1 class="glitch" data-text="PARADOX">PARADOX</h1>
+		<p>WHERE LOGIC IS UNACCEPTABLE</p>
+		<a href="#">
+			<button class="bubbly-button">List of Paradox</button>
+		</a>
+		
+	</div>
+
+
+	<script type="text/javascript" src="Assets/js/particles.js"></script>
+	<script type="text/javascript" src="Assets/js/app.js"></script>
+	<script type="text/javascript" src="Assets/js/app2.js"></script>
+	<script type="text/javascript" src="Assets/js/app3.js"></script>
+	<script type="text/javascript" src="Assets/js/app4.js"></script>
+	<script type="text/javascript" src="Assets/js/app5.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<script>
+		var animateButton = function(e) {
+
+			e.preventDefault;
+  			//reset animation
+  			e.target.classList.remove('animate');
+  
+ 			e.target.classList.add('animate');
+ 			setTimeout(function(){
+  			e.target.classList.remove('animate');
+  			},700);
+		};
+
+		var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+		for (var i = 0; i < bubblyButtons.length; i++) {
+			bubblyButtons[i].addEventListener('click', animateButton, false);
+		}
+	</script>
+	
+</body>
+</html>
